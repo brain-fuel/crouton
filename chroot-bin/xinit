@@ -5,7 +5,7 @@
 
 # Adds a :# to the xinit command line, where # is the first available display
 # number. Also adds the -- to the command line and references the global
-# xserverrc if it isn't already there.  By putting this in /usr/local/bin, PATH
+# xserverrc if it isn't already there.  By putting this in /usr/bin, PATH
 # will prefer it and scripts that call xinit will automagically work.
 
 xserverrc='/etc/X11/xinit/xserverrc'
@@ -31,4 +31,4 @@ done
 # If possible, switch to VT1 to avoid strangeness when launching from VT2
 chvt 1 2>/dev/null || true
 
-exec /usr/bin/xinit /usr/local/bin/croutonxinitrc-wrapper "$@" $dash $xserverrc ":$disp"
+exec /usr/bin/xinit /usr/bin/croutonxinitrc-wrapper "$@" $dash $xserverrc ":$disp"

@@ -9,7 +9,7 @@ import subprocess
 import sys
 
 if len(sys.argv) == 2 and sys.argv[1] in ("prev", "next"):
-  exitcode = subprocess.call(["/usr/local/bin/croutoncycle", sys.argv[1]])
+  exitcode = subprocess.call(["/usr/bin/croutoncycle", sys.argv[1]])
 else:
   sys.stderr.write("Usage: %s prev|next\n" % str(sys.argv[0]))
   exitcode = 2

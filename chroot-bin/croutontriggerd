@@ -86,7 +86,7 @@ done | unbuffered_awk "
         } else if (!cmd && c && s && a && n) {
             cmd = \"n\"
         } else if (cmd && !c && !s && !a && !p && !n) {
-            system(\"/usr/local/bin/croutoncycle \" cmd)
+            system(\"/usr/bin/croutoncycle \" cmd)
             cmd = \"\"
         }
     }

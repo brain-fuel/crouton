@@ -6,7 +6,7 @@
 # Helper script for launching services normally managed by upstart.
 # Called during session's XDG autostart.
 
-RELEASE="`/usr/local/bin/croutonversion -r`"
+RELEASE="`/usr/bin/croutonversion -r`"
 
 # Run the exec line from an Upstart conf file. Right now this assumes no space
 # in the path and no arguments.

@@ -35,7 +35,7 @@ if [ "$XMETHOD" = 'xorg' ] || grep -q xorg /etc/crouton/targets; then
 fi
 
 # Use croutonurlhandler as a fallback URL handler
-handler='/usr/local/bin/croutonurlhandler'
+handler='/usr/bin/croutonurlhandler'
 for link in x-www-browser gnome-www-browser www-browser; do
     if ! update-alternatives --query "$link" | grep -q "$handler"; then
         update-alternatives --install "/usr/bin/$link" "$link" "$handler" 15

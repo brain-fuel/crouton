@@ -7,7 +7,7 @@
 # Right now this just sets up .desktop files in the user's autostart
 # directory to override global autostart.
 
-RELEASE="`/usr/local/bin/croutonversion -r`"
+RELEASE="`/usr/bin/croutonversion -r`"
 
 # unity-settings-daemon should run instead of gnome-settings-daemon in trusty
 if [ "$RELEASE" = 'trusty' -o "$RELEASE" = 'xenial' ]; then

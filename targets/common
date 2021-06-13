@@ -80,8 +80,8 @@ elif [ -z "$TARGETNOINSTALL" -o -n "$RESTOREHOSTBIN" ]; then
     for f in $CHROOTBIN; do
         echo "Installing $f into the chroot..." 1>&2
         src="${CHROOTBINDIR:-../chroot-bin}/$f"
-        $SIMULATE installscript "$src" "$CHROOT/usr/local/bin/"
-        [ ! -h "$src" ] && $SIMULATE chmod 755 "$CHROOT/usr/local/bin/$f"
+        $SIMULATE installscript "$src" "$CHROOT/usr/bin/"
+        [ ! -h "$src" ] && $SIMULATE chmod 755 "$CHROOT/usr/bin/$f"
     done
     for f in $CHROOTETC; do
         echo "Installing $f into the chroot..." 1>&2

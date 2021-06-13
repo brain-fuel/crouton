@@ -26,7 +26,7 @@
 
 2. 然后打开shell（`ctrl+alt+T`,在打开的窗口中输入`shell`，然后回车）。
 
-3. 输入`sudo install -Dt /usr/local/bin -m 755 ~/Downloads/crouton`，这一步是将下载下来的脚本安装到`/usr/local/bin`这个可执行目录里面。
+3. 输入`sudo install -Dt /usr/bin -m 755 ~/Downloads/crouton`，这一步是将下载下来的脚本安装到`/usr/bin`这个可执行目录里面。
 
 4. `sudo crouton`可以查看帮助，本教程**示例**部分会有一些命令使用举例。
 
@@ -42,7 +42,7 @@
 
 1. 下载Crouton
 2. 打开shell（`ctrl+alt+T`,在打开的窗口中输入`shell`，然后回车）。
-3. 输入`sudo install -Dt /usr/local/bin -m 755 ~/Downloads/crouton`
+3. 输入`sudo install -Dt /usr/bin -m 755 ~/Downloads/crouton`
 4. `sudo crouton -t xfce`
 5. 等吧，可以喝杯星巴克
 6. 安装完成后，使用`sudo enter-chroot startxfce4`，或者`sudo startxfce4`运行chroot，会自动跳至Xfce

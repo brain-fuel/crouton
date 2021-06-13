@@ -19,7 +19,7 @@ if [ -n "$SETOPTIONS" ]; then
 fi
 
 # We need all paths to do administrative things
-export PATH='/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin'
+export PATH='/bin:/sbin:/usr/bin:/usr/sbin:/usr/bin:/usr/local/sbin'
 
 # Common functions
 . "`dirname "$0"`/../installer/functions"
@@ -189,7 +189,7 @@ fixkeyboardmode() {
 # [$3]: if 'so', compiles as a shared object and installs it into lib
 # $3+: any package dependencies other than gcc and libc-dev, crouton-style.
 compile() {
-    local out="/usr/local/bin/crouton$1"
+    local out="/usr/bin/crouton$1"
     local linker="$2"
     local cflags='-xc -Os -I/usr/src/crouton'
     if [ "$3" = 'so' ]; then

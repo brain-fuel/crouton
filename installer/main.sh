@@ -698,8 +698,8 @@ else # Restore host-bin only
 fi
 
 if [ -z "$RESTOREBIN" ]; then
-    # Ensure that /usr/local/bin and /etc/crouton exist
-    mkdir -p "$CHROOT/usr/local/bin" "$CHROOT/etc/crouton"
+    # Ensure that /usr/bin and /etc/crouton exist
+    mkdir -p "$CHROOT/usr/bin" "$CHROOT/etc/crouton"
 
     # If -U was not specified, update existing targets.
     if [ -z "$UPDATEIGNOREEXISTING" ]; then
